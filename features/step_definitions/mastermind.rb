@@ -9,6 +9,6 @@ When /^I start a new game$/ do
 end
 
 Then /^the game should say "(.*?)"$/ do |message|
-  @messenger.string.split("/n").should include(message)
+  @messenger.string.split("\n").should include(message)
 end
 
